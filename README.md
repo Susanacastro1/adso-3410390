@@ -1,5 +1,5 @@
 # adso-3410390
-![My Picture](src.img/profile.jpeg)
+![My Picture](src/profile.jpeg)
 ## Susana Castro Valencia
 ### Análisis y Desarrollo de Software
 **Centros de Procesos Industriales y Construcción**
