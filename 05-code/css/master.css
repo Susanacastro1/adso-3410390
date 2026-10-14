@@ -1,0 +1,99 @@
+
+/* Variables */
+:root {
+    --color-primary: #2a1b0f;
+    --color-secondary: #ebae86;
+    --color-tertiary: white;
+    --font-headings: Arial, sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+    margin: 0;
+}
+
+/* Contenido principal */
+main {
+    min-height: 100dvh;
+}
+
+/* Barra de navegación */
+header#navbar {
+    align-items: center;
+    background-color:#000000;
+    border-bottom: 2px solid #E3AB46;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    font-family: var(--font-headings);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* Logo */
+header#navbar img.logo {
+    height: 70px;
+    padding-inline: 1.4rem;
+}
+
+/* Opciones del menú */
+nav.options {
+    display: flex;
+    gap: 2rem;
+}
+
+nav.options a:is(:link, :visited) {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.2s ease-in;
+}
+
+
+nav.options a:not(.active):hover {
+    transform: translateX(-4px) scale(1.02);
+}
+
+/* Opción activa */
+nav.options a.active {
+    border-bottom: 2px solid #E3AB46;
+    color: #E3AB46;
+    
+}
+
+/* Sección About */
+section#about {
+    background: url("../images/image 1.png") no-repeat center / cover;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 100px;
+    min-height: 760px;
+}
+:visited{
+color:  white;
+}
+:link{
+    color: white;
+}
+
+
+nav.options {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex: 0;
+    padding-right: 2rem;
+}
+
+
+
